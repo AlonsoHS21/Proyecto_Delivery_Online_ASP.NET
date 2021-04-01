@@ -3,7 +3,7 @@
 
 -- create database Huarcaya_Delivery_DB
 go
-use Huarcaya_Delivery_DB
+--use Huarcaya_Delivery_DB
 go
 create table Usuarios(
 	ID smallint identity(1,1),
@@ -27,5 +27,13 @@ create table Datos_Personales(
 	Email varchar(100) not null,
 	Fecha_Cuenta date not null,
 )
-
-
+-- Alter table Claves Primarias
+alter table Usuarios add constraint PK_Usuarios primary key(ID)
+go
+alter table Pedidos add constraint PK_Pedidos primary key(ID)
+go
+-- Alter table Claves Foraneas
+alter table Datos_Personales add foreign key (ID_Usuario) references Usuarios(ID)
+go
+alter table Pedidos add foreign key (ID_Usuario) references Usuarios(ID)
+go

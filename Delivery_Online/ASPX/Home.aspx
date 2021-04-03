@@ -18,19 +18,26 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav>
-            <input type="checkbox" id="check"/>
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Diseño</label>
-            <ul>
-                <li><a href="#" class="active" >Home</a></li>
-                <li><a href="#">Pedidos</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Acerca de</a></li>
-            </ul>
-        </nav>
+       
     </form>
+    <header class="navbar">
+        <a href="#" class="logo">Fogon</a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-link" id="menu">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
+        </div>
+    </header>
+    <section class="banner"></section>
+  
+    <script src="../Home.js"></script>
 </body>
 </html>

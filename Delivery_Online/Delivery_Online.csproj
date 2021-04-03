@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="ASPX\Home.aspx" />
     <Content Include="CSS\Estilos_Home.css" />
+    <Content Include="Home.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

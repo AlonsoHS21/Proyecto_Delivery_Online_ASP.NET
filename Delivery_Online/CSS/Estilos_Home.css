@@ -6,92 +6,104 @@
     box-sizing: border-box;
 }
 body{
-    font-family: monserrat;
+    background: #000;
+    min-height: 200vh;
 }
-nav{
-    background: #0094ff;
-    height: 80px;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
 }
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+header .sticky{
+    padding: 5px 100px;
+    background: #fff;
 }
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
 }
-active a:hover{
-    background: #000000;
-    transition: .5s;
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
+header ul li{
+    position: relative;
+    list-style: none;
 }
-#check{
-    display:none;
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
 }
-@media (max-width: 952px){
-    lablel.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: 0;
-        text-align: center;
-        transition: all 5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0px;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
-section {
-    background: url(https://www.xtrafondos.com/wallpapers/resized/textura-madera-en-negro-2802.jpg?s=large) no-repeat;
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://www.xtrafondos.com/wallpapers/resized/camara-fujinon-vintage-con-luces-neon-3477.jpg?s=large);
     background-size: cover;
-    height: calc(100vh - 80px);
+}
+header .sticky .logo,
+header .sticky ul li a{
+    color:#000;
+}
+.toggle-button{
+    position: absolute;
+    top: 45px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 1000px){
+    .toggle-button{
+        display: flex;
+    }
+    header ul li{
+        display:none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header li{
+        text-align: center;
+    }
+    header li a{
+        padding: .5rem 1rem;
+    }
+    header .active{
+        display: flex;  
+    }
 }

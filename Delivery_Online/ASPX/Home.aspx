@@ -12,16 +12,15 @@
     <script src="https://kit.fontawesome.com/d749d06842.js"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"/>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@500&display=swap" rel="stylesheet"/>
 
     <title>Pagina Principal</title>
 
 </head>
 <body>
-    <form id="form1" runat="server">
-       
-    </form>
     <header class="navbar">
-        <a href="#" class="logo">Fogon</a>
+        <a href="#" class="logo">Lullaby</a>
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -36,8 +35,11 @@
         </ul>
         </div>
     </header>
+    <form id="form1" runat="server">
+        
+    </form>
     <section class="banner"></section>
   
-    <script src="../Home.js"></script>
+    <script src="../JS/Home.js"></script>
 </body>
 </html>

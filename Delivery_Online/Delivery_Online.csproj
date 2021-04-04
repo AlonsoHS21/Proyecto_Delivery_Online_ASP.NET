@@ -67,18 +67,45 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ASPX\AcercaDe.aspx" />
+    <Content Include="ASPX\Contacto.aspx" />
     <Content Include="ASPX\Home.aspx" />
+    <Content Include="ASPX\Pedidos.aspx" />
+    <Content Include="CSS\Estilos_AcercaDe.css" />
+    <Content Include="CSS\Estilos_Contacto.css" />
     <Content Include="CSS\Estilos_Home.css" />
+    <Content Include="CSS\Estilos_Pedidos.css" />
     <Content Include="JS\Home.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASPX\AcercaDe.aspx.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\AcercaDe.aspx.designer.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ASPX\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ASPX\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ASPX\Pedidos.aspx.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASPX\Pedidos.aspx.designer.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

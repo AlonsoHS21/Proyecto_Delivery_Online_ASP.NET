@@ -28,10 +28,10 @@
         </a>
         <div class="navbar-link" id="menu">
          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pedidos</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Acerca de</a></li>
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="Pedidos.aspx">Pedidos</a></li>
+            <li><a href="Contacto.aspx">Contacto</a></li>
+            <li><a href="AcercaDe.aspx">Acerca de</a></li>
         </ul>
         </div>
     </header>
